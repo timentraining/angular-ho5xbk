@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+
+  <course [courseTitle]="name"> </course>
+  <course
+    courseTitle="The Java"
+    courseFee1="87.00"
+    courseFee2="65.00"
+    (courseFeeSelected)="courseSelected($event)"
+  >
+  </course>
+</p>
